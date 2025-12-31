@@ -3,25 +3,25 @@
    ============================================ */
 
 :root {
-    /* Paleta principal - Burgundy/Vinho */
-    --burgundy-dark: #5C1A1A;
-    --burgundy-main: #7D2828;
-    --burgundy-light: #9B3636;
+    /* Paleta principal - Azul profundo */
+    --blue-dark: #1E3A8A;
+    --blue-main: #2563EB;
+    --blue-light: #3B82F6;
     
-    /* Acento - Laranja queimado */
-    --accent-orange: #E85D04;
-    --accent-light: #F77F00;
+    /* Acento - Teal */
+    --accent-teal: #06B6D4;
+    --accent-light: #22D3EE;
     
     /* Neutros */
     --black: #0A0A0A;
-    --gray-dark: #2A2A2A;
-    --gray-mid: #666666;
-    --gray-light: #E5E5E5;
+    --gray-dark: #1F2937;
+    --gray-mid: #6B7280;
+    --gray-light: #E5E7EB;
     --white: #FFFFFF;
-    --off-white: #F9F9F9;
+    --off-white: #F9FAFB;
     
     /* Tipografia */
-    --font-display: 'Playfair Display', serif;
+    --font-display: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     
     /* Espaçamentos */
@@ -59,8 +59,9 @@ body {
 
 h1, h2, h3 {
     font-family: var(--font-display);
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 h1 {
@@ -95,7 +96,7 @@ section {
 }
 
 .section-title {
-    color: var(--burgundy-dark);
+    color: var(--blue-dark);
     margin-bottom: var(--spacing-lg);
     position: relative;
     display: inline-block;
@@ -108,7 +109,7 @@ section {
     left: 0;
     width: 60%;
     height: 6px;
-    background: var(--accent-orange);
+    background: var(--accent-teal);
 }
 
 /* ============================================
@@ -131,26 +132,26 @@ section {
 }
 
 .btn-primary {
-    background: var(--burgundy-dark);
+    background: var(--blue-dark);
     color: var(--white);
-    border-color: var(--burgundy-dark);
+    border-color: var(--blue-dark);
 }
 
 .btn-primary:hover {
-    background: var(--accent-orange);
-    border-color: var(--accent-orange);
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(232, 93, 4, 0.3);
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--burgundy-dark);
-    border-color: var(--burgundy-dark);
+    color: var(--blue-dark);
+    border-color: var(--blue-dark);
 }
 
 .btn-secondary:hover {
-    background: var(--burgundy-dark);
+    background: var(--blue-dark);
     color: var(--white);
     transform: translateY(-2px);
 }
@@ -175,7 +176,7 @@ section {
     right: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(135deg, transparent 0%, rgba(232, 93, 4, 0.05) 100%);
+    background: linear-gradient(135deg, transparent 0%, rgba(6, 182, 212, 0.05) 100%);
     z-index: 0;
 }
 
@@ -193,7 +194,7 @@ section {
 }
 
 .hero-title {
-    color: var(--burgundy-dark);
+    color: var(--blue-dark);
     margin-bottom: var(--spacing-md);
     line-height: 1.1;
 }
@@ -221,8 +222,8 @@ section {
     height: auto;
     border-radius: 12px;
     box-shadow: 
-        20px 20px 0 var(--accent-orange),
-        -10px -10px 0 var(--burgundy-light);
+        20px 20px 0 var(--accent-teal),
+        -10px -10px 0 var(--blue-main);
     transition: transform 0.3s ease;
 }
 
@@ -253,7 +254,7 @@ section {
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
     padding-top: var(--spacing-lg);
-    border-top: 3px solid var(--accent-orange);
+    border-top: 3px solid var(--accent-teal);
 }
 
 .stat {
@@ -266,7 +267,7 @@ section {
     font-family: var(--font-display);
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--burgundy-dark);
+    color: var(--blue-dark);
     line-height: 1;
 }
 
@@ -283,7 +284,7 @@ section {
    ============================================ */
 
 .projeto {
-    background: var(--burgundy-dark);
+    background: var(--gray-dark);
     color: var(--white);
 }
 
@@ -292,7 +293,7 @@ section {
 }
 
 .projeto .section-title::after {
-    background: var(--accent-orange);
+    background: var(--accent-teal);
 }
 
 .projeto-header {
@@ -302,7 +303,7 @@ section {
 
 .projeto-tag {
     display: inline-block;
-    background: var(--accent-orange);
+    background: var(--accent-teal);
     color: var(--white);
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
@@ -350,7 +351,7 @@ section {
 .feature {
     padding: var(--spacing-md);
     background: rgba(255, 255, 255, 0.05);
-    border-left: 4px solid var(--accent-orange);
+    border-left: 4px solid var(--accent-teal);
     border-radius: 4px;
 }
 
@@ -374,8 +375,8 @@ section {
 }
 
 .projeto .btn-primary {
-    background: var(--accent-orange);
-    border-color: var(--accent-orange);
+    background: var(--accent-teal);
+    border-color: var(--accent-teal);
 }
 
 .projeto .btn-primary:hover {
@@ -391,7 +392,7 @@ section {
 
 .projeto .btn-secondary:hover {
     background: var(--white);
-    color: var(--burgundy-dark);
+    color: var(--gray-dark);
 }
 
 .projeto-visual {
@@ -449,19 +450,19 @@ section {
     background: var(--white);
     padding: var(--spacing-lg);
     border-radius: 8px;
-    border-left: 6px solid var(--accent-orange);
+    border-left: 6px solid var(--accent-teal);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .competencia-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(232, 93, 4, 0.15);
-    border-left-color: var(--burgundy-dark);
+    box-shadow: 0 8px 30px rgba(6, 182, 212, 0.15);
+    border-left-color: var(--blue-dark);
 }
 
 .competencia-card h3 {
-    color: var(--burgundy-dark);
+    color: var(--blue-dark);
     margin-bottom: var(--spacing-sm);
     font-size: 1.35rem;
 }
@@ -507,16 +508,16 @@ section {
     background: var(--off-white);
     border-radius: 8px;
     text-decoration: none;
-    color: var(--burgundy-dark);
+    color: var(--blue-dark);
     font-weight: 600;
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .contato-link:hover {
-    background: var(--burgundy-dark);
+    background: var(--blue-dark);
     color: var(--white);
-    border-color: var(--accent-orange);
+    border-color: var(--accent-teal);
     transform: translateY(-3px);
 }
 
@@ -614,7 +615,7 @@ section {
     
     .hero-image img {
         box-shadow: 
-            15px 15px 0 var(--accent-orange),
-            -8px -8px 0 var(--burgundy-light);
+            15px 15px 0 var(--accent-teal),
+            -8px -8px 0 var(--blue-main);
     }
 }
